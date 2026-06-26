@@ -1,3 +1,13 @@
 spring:
-  application:
-    name: exercice
+  datasource:
+    url: jdbc:postgresql://db-aws-turma3.cj28gso6cpkz.us-east-2.rds.amazonaws.com:5432/postgres
+    username: yago
+    password: yagoadmin
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
