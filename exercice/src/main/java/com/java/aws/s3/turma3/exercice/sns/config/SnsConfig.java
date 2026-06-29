@@ -12,7 +12,7 @@ public class SnsConfig {
     @Bean
     public SnsClient snsClient() {
         return SnsClient.builder()
-                .region(Region.US_EAST_2)
+                .region(Region.US_EAST_1)
                 .credentialsProvider(DefaultCredentialsProvider.create())
                 .build();
     }
